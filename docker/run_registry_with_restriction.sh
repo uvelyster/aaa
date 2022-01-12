@@ -1,3 +1,5 @@
+#!/bin/bash
+
 docker run -d -p 443:443 --restart=always --name registry \
 -v /auth:/certs \
 -v /image-vol:/var/lib/registry \
